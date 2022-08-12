@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 1080px;
+}
+.card {
+  margin-top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 100%);
+  width: 40em;
+  height: 30em;
+  border-radius: 10px;
+}
+.card-right {
+  width: 20em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+.card-img {
+  width: 20em;
+}
+#desktop-img {
+  height: 30em;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#mobile-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+}
+.card-header-small {
+  width: 20em;
+  height: fit-content;
+  padding: 2em;
+  letter-spacing: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.card-header-big {
+  font-family: "Fraunces", serif;
+  padding: 0 1em;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 38px;
+}
+.card-desc {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 2em;
+}
+.card-price {
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+}
+#price-lower {
+  width: fit-content;
+  font-size: 2em;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  margin-right: 20px;
+}
+#price-higher {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.card-addbtn {
+  padding: 1em 2em;
+}
+.card-addbtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.card-addbtn button svg {
+  margin-right: 10px;
+}
+
+/* for mobile users */
+@media screen and (max-width: 660px) {
+  #desktop-img {
+    display: none;
+  }
+  #mobile-img {
+    display: flex;
+    width: 20em;
+  }
+  .card {
+    width: 20em;
+    height: 30em;
+  }
+  .card-header-small {
+    padding: 1.2em 2em;
+  }
+  .card{
+    margin-top: 50px;
+  }
+}
